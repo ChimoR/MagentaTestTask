@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+  <changeset id="insert-1" author="Otshepenec"> 
+    <insert tablename="Distance"> 
+      <column name="From_city" value="Kazan"> 
+      </column>
+	<column name="To_city" value="Moscow"> 
+      </column>
+	<column name="Distance" value="824750"> 
+      </column>
+    </insert>
+    <rollback> 
+      DELETE FROM Distance WHERE From_city = 'Kazan' AND To_city = 'Moscow' AND Distance = 824750; 
+    </rollback>
+  </changeset>
+</databasechangelog>

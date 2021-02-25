@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Transaction>
+<Distance>
+	<from_city>Kazan</from_city>
+	<to_city>Samara</to_city>
+	<distance>355000</distance>
+</Distance>
+<City>
+    <latitude>55.760419</latitude>
+    <longitude>49.190295</longitude>
+    <name>Kazan</name>
+</City>
+</Transaction>
